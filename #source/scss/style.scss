@@ -1,0 +1,183 @@
+@import '../scss/null-style.scss';
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans:wght@300;400&display=swap');
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	font-size: 16px;
+	color: #000000;
+}
+
+h2 {
+	font-family: 'Anton', sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 50px;
+	line-height: 45px;
+	text-transform: uppercase;
+}
+
+h3 {
+	font-family: 'Anton', sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 25px;
+	line-height: 23px;
+	text-transform: uppercase;
+}
+
+.container {
+	width: 1170px;
+	margin: 0 auto;
+}
+
+.header {
+	position: absolute;
+	top: 57px;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+
+	.top-line {
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		font-family: 'Anton', sans-serif;
+		font-style: normal;
+		font-weight: 400;
+		letter-spacing: 0.1em;
+		text-transform: uppercase;
+		color: #ffffff;
+
+		&__logo {}
+
+		&__main-menu {
+			margin-left: 49px;
+			ul {
+				display: flex;
+				justify-content: flex-start;
+				column-gap: 40px;
+				a {
+					color: #ffffff;
+					font-size: 14px;
+					line-height: 21px;
+				};
+			}
+		}
+
+		&__phone-number {
+			margin-left: auto;
+			margin-right: 0;
+			a{
+				font-size: 17px;
+				line-height: 26px;
+				color: #ffffff;
+			}
+		}
+	}
+}
+
+.first-screen {
+	width: 100vw;
+	height: 100vh;
+	background: url(/images/header-bg.jpg) no-repeat;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+	&__h1-subtitle {
+		font-family: 'Anton', sans-serif;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 30px;
+		letter-spacing: 0.1em;
+		text-transform: uppercase;
+		color: #FFFFFF;
+		text-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+	}
+
+	&__h1-title {
+		font-family: 'Anton', sans-serif;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 100px;
+		text-transform: uppercase;
+		color: #ffffff;
+		margin: 28px 0 0 -3px;
+		line-height: 88px;
+		text-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+	}
+
+	&__button {
+		box-sizing: border-box;
+		width: 238px;
+		height: 57px;
+		border: 1px solid #FFFFFF;
+		margin: 52px 0 0 0;
+		a {
+			display: block;
+			font-family: 'Anton', sans-serif;
+			font-style: normal;
+			font-weight: 400;
+			font-size: 17px;
+			line-height: 57px;
+			text-align: center;
+			letter-spacing: 0.1em;
+			text-transform: uppercase;
+			color: #FFFFFF;
+		}
+	}
+}
+
+.h2-title {
+	margin: 127px 0 0 0;
+}
+
+.articles {
+	margin: 81px 0 0 0;
+
+	display: flex;
+	justify-content: space-between;
+	column-gap: 36px / 1170px * 100%;
+}
+
+.article {
+	max-width: 564px / 1170px *100%;
+
+	&__article-announcement {
+		margin: 39px 0 0 0;
+		line-height: 26px;
+		text-align: justify;
+	}
+}
+
+.gallery {
+	margin: 67px 0 0 0;
+	display: flex;
+	justify-content: space-between;
+	gap: 30px;
+	flex-wrap: wrap;
+	img {
+		height: 344px;
+	}
+}
+
+footer {
+	padding: 114px 0 113px 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	column-gap: 55px;
+
+	.copyright-left {
+		font-size: 15px;
+		line-height: 20px;
+	}
+
+	.copyright-right {
+		font-size: 15px;
+		line-height: 20px;
+	}
+}
